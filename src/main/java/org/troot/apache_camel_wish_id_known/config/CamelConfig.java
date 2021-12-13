@@ -12,7 +12,7 @@ import org.troot.apache_camel_wish_id_known.route.ExampleRouteBuilder;
 @Configuration
 public class CamelConfig {
 
-    private Logger log = LoggerFactory.getLogger(CamelConfig.class);
+    private final Logger log = LoggerFactory.getLogger(CamelConfig.class);
 
     @Autowired
     private ExampleRouteBuilder exampleRouteBuilder;

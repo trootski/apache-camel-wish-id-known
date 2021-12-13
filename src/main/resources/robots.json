@@ -1,6 +1,10 @@
-{
-  "results": {
-    "bender": "Bender Bending Rodríguez is one of the main characters in the animated television series Futurama.",
-    "marvin": "Marvin the Paranoid Android is a fictional character in The Hitchhiker's Guide to the Galaxy series by Douglas Adams."
+[
+  {
+    "name": "bender",
+    "description": "Bender Bending Rodríguez is one of the main characters in the animated television series Futurama."
+  },
+  {
+    "name": "marvin",
+    "description": "Marvin the Paranoid Android is a fictional character in The Hitchhiker's Guide to the Galaxy series by Douglas Adams."
   }
-}
+]

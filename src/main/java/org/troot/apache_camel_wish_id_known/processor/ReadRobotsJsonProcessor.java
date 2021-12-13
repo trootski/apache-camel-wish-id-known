@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 import org.troot.apache_camel_wish_id_known.domain.RobotsDTO;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 @Component
 public class ReadRobotsJsonProcessor implements Processor {
@@ -16,9 +18,9 @@ public class ReadRobotsJsonProcessor implements Processor {
     @Value("classpath:robots.json")
     Resource resourceFile;
 
-    public RobotsDTO getRobotsJson() throws IOException {
+    public List<RobotsDTO> getRobotsJson() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(resourceFile.getFile(), RobotsDTO.class);
+        return Arrays.asList(mapper.readValue(resourceFile.getFile(), RobotsDTO[].class));
     }
 
     @Override
